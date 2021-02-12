@@ -45,3 +45,36 @@
     width: 70%;
 }
 // Services
+
+// Role of Referee
+.referee-role-section{
+
+    width: 100%;
+    height: 60vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: lightgrey;
+}
+
+.ref-panel
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    width:65%;
+    margin: auto;
+}
+
+.ref-img img{
+    width: 80%;
+    height: auto;
+    border-radius: 100px;
+}
+
+
+
+// Role Of Referee
+
