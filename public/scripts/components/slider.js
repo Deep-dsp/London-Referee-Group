@@ -1,5 +1,8 @@
 let imgset = document.querySelector('.part-collection');
 let images = imgset.querySelectorAll('a');
+// Nav Slider variable
+let burger = document.querySelector('.ham-burger');
+let navbar = document.querySelector('nav');
 
 let currentImage = 0;
 
@@ -20,3 +23,7 @@ function animatebanner(){
 }
 
 animatebanner();
+
+burger.addEventListener('click', ()=>{
+    navbar.classList.toggle('nav-active');
+});

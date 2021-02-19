@@ -144,6 +144,10 @@ nav
     letter-spacing: 1px;
   }
  
+  .nav-active{
+    transform: translateX(0%);
+  }
+
   .dropdown:hover .dropbtn {
     color: #ffb95d;
   }
@@ -179,6 +183,8 @@ nav
     display: block;
   }
 
+
+//   Media Queries
 @media only screen and (max-width: 1400px)
 {
     nav{
@@ -215,6 +221,7 @@ nav
         height: 100vh;
         background: rgba(#434343, 0.98);
         transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
         position: absolute;
         top: 10vh;
 
