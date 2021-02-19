@@ -13,9 +13,28 @@ body{
 }
 
 .ham-burger i{
-    color: #fff;
+    font-size: 2rem;
+    color: #434343;
 }
 
 .ham-burger{
     display: none;
+    margin-left: 20px;
+}
+
+.ham-burger:hover{
+    cursor: pointer;
+}
+
+.ref-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .ham-burger{
+        display: block;
+    }
 }
