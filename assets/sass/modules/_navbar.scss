@@ -2,10 +2,34 @@ header{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/images/home-hero.jpg');
-    background-size: contain;
-    object-fit: cover;
+    background-position: center 10px;
+    background-repeat: no-repeat;
 
     position: relative;
+}
+
+#bg-contact{   /** needRef**/
+    width: 100%;
+    height: 60vh;
+    background: chocolate;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/public/images/r_back.jpg');
+    background-position: center ;
+    background-size: cover;
+    object-fit: contain;
+    position: relative;
+
+    .contact-pos{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+
+        p{
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+    }
 }
 
 .hero-home{
@@ -220,7 +244,7 @@ nav
         width: 100vw;
         height: 100vh;
         background: rgba(#434343, 0.98);
-        transform: translateX(-100%);
+        transform: translateX(-200%);
         transition: transform 0.5s ease-in;
         position: absolute;
         top: 10vh;
