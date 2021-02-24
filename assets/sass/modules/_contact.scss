@@ -1,0 +1,57 @@
+.contact-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin: auto;
+
+    .form-block{
+        background: chartreuse;
+
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        p{
+            font-size: 2rem;
+            font-weight: bold;
+            color: crimson;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 60vh;
+
+            input,textarea{
+                    width: 80%;
+                    padding: 12px 20px;
+                    margin: 8px 0;
+                    display: inline-block;
+                    border: 1px solid rgb(255, 81, 1);
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    background-color: rgb(255, 214, 198);
+            }
+
+            button{
+                cursor: pointer;
+                width: 80%;
+                padding: 12px 20px;
+                background: #434343;
+                color: white;
+                font-size: 1.1rem;
+                font-weight: bold;
+                border: none;
+                border-radius: 10px;
+            }
+
+            button:hover{
+                background: #747474;
+            }
+        }
+    }
+} 
