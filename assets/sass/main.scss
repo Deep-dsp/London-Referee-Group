@@ -1,0 +1,42 @@
+@import './modules/navbar';
+@import './modules/homepage';
+@import './modules/footer';
+@import './modules/needref';
+@import './modules/contact';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.ham-burger i{
+    font-size: 2rem;
+    color: #434343;
+}
+
+.ham-burger{
+    display: none;
+    margin-left: 20px;
+}
+
+.ham-burger:hover{
+    cursor: pointer;
+}
+
+.ref-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .ham-burger{
+        display: block;
+    }
+}
