@@ -8,10 +8,10 @@ server.use(express.static('public'));
 
 server.get("/" , (req, res) => {
   console.log("Hit your Home Route");
-  res.sendFile(path.join(__dirname, "stream.html")); //localhost:3000/index.html
+  res.sendFile(path.join(__dirname, "index.html")); //localhost:3000/index.html
 })
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 5000;
 
 server.listen(port, () => {
   console.log(`Server is now running at ${port}/`);
