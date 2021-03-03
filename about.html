@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <title>About Us</title>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="hero-home">
+                <div class="logo">
+                    <img src="/images/logo.png" alt="">
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <div class="dropdown">
+                            <button class="dropbtn">Programs</button>
+                            <div class="dropdown-content">
+                              <a href="#">Junior Mentorship Program</a>
+                              <a href="#">Membership Program</a>
+                              <a href="#">Careers</a>
+                            </div>
+                        </div> 
+                        <!-- <li><a href="#">Refree</a></li>
+                        <li><a href="#">Membership</a></li> -->
+                        <li><a href="/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="ref-button">
+                    <div class="log-button">
+                        <button>Log In</button>
+                    </div>
+                    <div class="ham-burger">
+                        <i class="bars icon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="who-are-we">
+                <h1>About us</h1>
+                <p>We are an organization of 225 hockey referees serving London and area.
+                If you are currently looking for an organization to referee your hockey league,
+                our team would like the opportunity to assist</p><br>
+                <div class="log-button">
+                    <button>More</button>
+                </div>
+            </div>
+        </header>
+        <section class="butt-admin">
+            <a href="/admin_login.php">Login</a>
+        </section>
+        
+        <section class="about-info">
+            <div class="about-pic">
+                <img src="images/about_img.jpg" alt="about referee">
+            </div>
+            <div class="about-text">
+                <h2>About us</h2>
+                <h3>Our game starts here</h3>
+                <p>The London referees Group is an organization of 225 hockey referees serving London and area. If you are currently looking for an organization to referee your minor hockey league or your mens hockey league. </p>
+            </div>
+        </section>
+        <section class="about-history">
+            <div class="history-pic">
+                <img src="images/about_his.jpg" alt="about history">
+            </div>
+            <div class="history-text">
+                <h2>Our History</h2>
+                <h3>Historic LRG Highlights</h3>
+                <p>The name of the organization is the "London Referees' Group" and maybe referred to in the organization's documents and records as "LRG". LRG is an unincorporated private association of its members, established on 15 July 2007 at London, Ontanrio. </p>
+            </div>
+            
+        </section>
+
+        <section id="app">
+            <div class="people-info">
+                <ul>
+                    <newmessage @showmydata="showPeopleData" v-for="people in carmodel" :people="people" :key="people.id"></newmessage>
+                </ul>
+                </div>
+                <section class="bio-data" :class=" {'show-bio' : showBioData}">
+                   <h2>{{currentPeopleData.name}}</h2>
+                   <h3>{{currentPeopleData.role}}</h3>
+                   <p>{{currentPeopleData.email}}</p>
+               </section>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script defer src='scripts/main.js' type='module'></script>
+       
+       
+    </main>
+</body>
+</html>
