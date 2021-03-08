@@ -1,0 +1,209 @@
+.text-info {
+    margin: 20px;
+    h2 {
+        margin-top: 40px;
+        font-weight: bold;
+        font-size: 25px;
+        
+    }
+    p {
+        margin-top: 15px;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.2;
+        color: gray;
+    }
+    
+}
+.user-con {
+    margin: 20px;
+    form {
+        display: flex;
+        flex-direction: column;
+       label {
+           margin: 5px 0px;
+           font-weight: bold;
+           color: gray;
+       }
+       input {
+           margin: 10px 0px;
+           height: 30px;
+           border: 2px solid orange;
+           border-radius: 10px;
+       }
+       button{
+           margin-top: 8px;
+           background-color: orange;
+           width: 100px;
+           height: 40px;
+           color: white;
+           border-radius: 8px;
+          border: none;
+          font-weight: bold;
+          font-size: 16px;
+       }
+    }
+
+}
+.user-social {
+    margin: 20px;
+    font-size: 14px;
+    color: gray;
+    font-style: italic;
+}
+.mess-con {
+    margin: 20px;
+}
+
+//welcome page
+.info-user {
+    margin: 20px;
+    h2{
+        font-weight: bold;
+        font-size: 20px;
+        
+    }
+    h3{
+        margin: 25px 0;
+        color: gray;
+    }
+    .info-create{
+        
+           background-color: orange;
+           padding: 10px;
+           color: white;
+           border-radius: 8px;
+          border: none;
+          font-weight: bold;
+          font-size: 16px;
+          text-decoration: none;
+    }
+}
+.user-edit {
+
+           padding: 10px;
+           color:orange;
+           border-radius: 8px;
+          border: 2px solid orange;
+          font-weight: bold;
+          font-size: 16px;
+          text-decoration: none;
+          margin-right: 20px;
+}
+.signout {
+    padding: 10px;
+    background-color: orange;
+    padding: 10px;
+    color: white;
+    border-radius: 8px;
+   border: none;
+   font-weight: bold;
+   font-size: 16px;
+   text-decoration: none;
+}
+//create user
+.create-con {
+    margin: 20px;
+    h2 {
+        font-weight: bold;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin-bottom: 5px;
+            color: gray;
+            font-size: 18px;
+        }
+        input {
+            margin: 5px 0px;
+            height: 30px;
+            border: 2px solid orange;
+            border-radius: 10px;
+        }
+        button{
+            margin-top: 8px;
+            background-color: orange;
+            width: 140px;
+            height: 40px;
+            color: white;
+            border-radius: 8px;
+           border: none;
+           font-weight: bold;
+           font-size: 16px;
+        }
+        select{
+            margin: 5px 0px;
+            height: 30px;
+            border: 2px solid orange;
+            border-radius: 10px;
+            height: 40px;
+        }
+    }
+}
+//edit user
+.edit-con {
+    margin: 20px;
+    h2 {
+        font-weight: bold;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        label {
+            margin-bottom: 5px;
+            color: gray;
+            font-size: 18px;
+        }
+        input {
+            margin: 5px 0px;
+            height: 30px;
+            border: 2px solid orange;
+            border-radius: 10px;
+        }
+        button{
+            margin-top: 8px;
+            background-color: orange;
+            width: 140px;
+            height: 40px;
+            color: white;
+            border-radius: 8px;
+           border: none;
+           font-weight: bold;
+           font-size: 16px;
+        }
+        select{
+            margin: 5px 0px;
+            height: 30px;
+            border: 2px solid orange;
+            border-radius: 10px;
+            height: 40px;
+        }
+    }
+}
+@media screen and (min-width: 700px) {
+    .text-info {
+        margin: 40px;
+    }
+    .user-con {
+        margin: 40px;
+        input {
+            width: 300px;
+        }
+    }
+    .user-social{
+        margin: 40px;
+    }
+    .mess-con {
+        margin: 40px;
+    }
+    .create-con {
+        input {
+            width: 300px;
+        }
+    }
+}

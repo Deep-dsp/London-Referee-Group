@@ -30,12 +30,12 @@
                         </div> 
                         <!-- <li><a href="#">Refree</a></li>
                         <li><a href="#">Membership</a></li> -->
-                        <li><a href="/contact.html">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </nav>
                 <div class="ref-button">
                     <div class="log-button">
-                        <button>Log In</button>
+                        <a href="admin/admin_login.php"><button>Log In</button></a>
                     </div>
                     <div class="ham-burger">
                         <i class="bars icon"></i>
@@ -47,15 +47,9 @@
                 <p>We are an organization of 225 hockey referees serving London and area.
                 If you are currently looking for an organization to referee your hockey league,
                 our team would like the opportunity to assist</p><br>
-                <div class="log-button">
-                    <button>More</button>
-                </div>
+                
             </div>
         </header>
-        <section class="butt-admin">
-            <a href="/admin_login.php">Login</a>
-        </section>
-        
         <section class="about-info">
             <div class="about-pic">
                 <img src="images/about_img.jpg" alt="about referee">
@@ -84,14 +78,14 @@
                     <newmessage @showmydata="showPeopleData" v-for="people in carmodel" :people="people" :key="people.id"></newmessage>
                 </ul>
                 </div>
-                <section class="bio-data" :class=" {'show-bio' : showBioData}">
+                <section class="bio-data" :class=" {'show-bio' : showBioData}" :people="currentPeopleData">
                    <h2>{{currentPeopleData.name}}</h2>
                    <h3>{{currentPeopleData.role}}</h3>
-                   <p>{{currentPeopleData.email}}</p>
+                   
                </section>
         </section>
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-        <script defer src='scripts/main.js' type='module'></script>
+        <script defer src='scripts/about.js' type='module'></script>
        
        
     </main>
