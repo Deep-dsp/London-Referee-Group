@@ -5,6 +5,7 @@
 @import './modules/needref';
 @import  './modules/about';
 @import './modules/contact';
+@import './modules/officialsDev';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
@@ -34,6 +35,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-active{
+    color: #ff9100;
 }
 
 @media only screen and (max-width: 768px)

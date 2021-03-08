@@ -1,9 +1,10 @@
 header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/home-hero.jpg');
-    background-position: center 10px;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/home-hero.jpg');
+    background-position: center ;
+    background-size: cover;
+    object-fit: contain;
 
     position: relative;
 }
@@ -12,7 +13,7 @@ header{
     width: 100%;
     height: 60vh;
     background: chocolate;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/r_back.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/r_back.jpg');
     background-position: center ;
     background-size: cover;
     object-fit: contain;
@@ -36,7 +37,7 @@ header{
     width: 100%;
     height: 60vh;
     background: chocolate;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/about.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/about.jpg');
     background-position: center 10px;
     background-size: cover;
     object-fit: contain;
@@ -69,6 +70,10 @@ header{
     top:0;
     left: 0;
     z-index: 9999;
+
+    -webkit-box-shadow: 0 8px 15px -10px #434343;
+	   -moz-box-shadow: 0 8px 15px -10px #434343;
+	        box-shadow: 0 8px 15px -10px #434343;
 }
 
 .logo
@@ -148,7 +153,7 @@ nav
 
 .who-are-we{
 
-    width: 24%;
+    width: 30%;
 
     display: flex;
     flex-direction: column;
@@ -161,6 +166,13 @@ nav
     h1,p{
         color: #fff;
         font-family: 'Roboto', sans-serif;
+    }
+    h1{
+        font-size: 5rem;
+    }
+
+    p{
+        font-size: 1.25rem;
     }
 
 }
@@ -257,8 +269,10 @@ nav
         }
     }
 
-    #ab-contact .contact-pos p{
-        font-size: 3rem;
+    #ab-contact .contact-pos{
+        p{
+            font-size: 3rem;
+        }
     }
 }
 

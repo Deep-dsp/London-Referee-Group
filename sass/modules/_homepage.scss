@@ -56,7 +56,7 @@
                 .img-box{
                     width: 150px;
                     height: 150px;
-                    border:5px  rgb(255, 110, 52) solid;
+                    border:1px  rgb(255, 110, 52) solid;
                     border-radius: 50%;
                     margin-bottom: 15px;
 
@@ -107,7 +107,7 @@
 
     width: 100%;
     height: 60vh;
-    background: rgb(255, 230, 218);
+    background: rgb(248, 248, 248);
 
     display: flex;
 
@@ -136,7 +136,7 @@
 
             p:nth-child(2){
                 width: 90%;
-                font-size: 0.85rem;
+                font-size: 1.05rem;
             }
             
         }
@@ -207,7 +207,7 @@
 
             p:nth-child(2){
                 width: 90%;
-                font-size: 0.85rem;
+                font-size: 1.05rem;
             }
             
         }
@@ -598,8 +598,8 @@
             text-align: center;
         }   
         
-        .ref-img{
-            margin-bottom: 20px;
+        .ref-img img{
+            display: none;
         }
     }
 
