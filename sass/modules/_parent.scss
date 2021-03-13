@@ -6,6 +6,7 @@
     justify-content: space-evenly;
     margin: auto;
     padding: 60px 0;
+
     .mission-values{
 
         display: flex;
@@ -99,6 +100,29 @@
             background: #ff9100;
             color: #fff;
         }
+    }
+}
+
+.shared-guide{
+    width: 60%;
+    margin: auto;
+
+    .offical-image{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 20px
+    }
+
+    span{
+        font-weight: lighter;
+        font-size: 0.8rem;
+        color: rgb(179, 179, 179);
+    }
+
+    .guidelines{
+        padding: 25px 0;
     }
 }
 
