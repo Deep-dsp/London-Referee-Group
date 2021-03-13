@@ -4,6 +4,7 @@
 @import './modules/footer';
 @import './modules/needref';
 @import  './modules/about';
+@import './modules/user';
 @import './modules/contact';
 @import './modules/officialsDev';
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
@@ -16,7 +17,9 @@ body{
 
     font-family: 'Poppins', sans-serif;
 }
-
+.hidden {
+    display: none;
+}
 .ham-burger i{
     font-size: 2rem;
     color: #434343;

@@ -35,9 +35,12 @@
                     border-radius: 4px;
                     box-sizing: border-box;
                     background-color: rgb(255, 214, 198);
+                    margin: 7px 0;
             }
-
-            button{
+            .submit-wrapper {
+                margin-top: 20px;
+            }
+            .submit{
                 cursor: pointer;
                 width: 80%;
                 padding: 12px 20px;
@@ -47,9 +50,10 @@
                 font-weight: bold;
                 border: none;
                 border-radius: 10px;
+                margin-top: 7px;
             }
 
-            button:hover{
+            .submit:hover{
                 background: #747474;
             }
         }
@@ -110,7 +114,57 @@
             }
         }
     }
-} 
+}
+
+// lightbox contact
+.lightboxCon {
+    .lightbox-contact {
+        display: none;
+        
+    }
+}
+.lightbox-contact {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    background-color: white;
+    .button {
+        height: 100%;
+        overflow: scroll;
+    }
+    
+    .close {
+    cursor: pointer;
+    position: fixed;
+    top: 50px;
+    right: 20px;
+    font-size: 30px;
+    
+    }
+}
+    
+
+.mess-sub {
+    padding: 30px;
+        display: flex;
+        flex-direction: column;
+        p {
+            position: relative;
+            font-size: 16px;
+            top: 30vh;
+            left: 20px;
+            
+            
+            z-index: 3;
+        }
+}
+.show-lb {
+    display: flex !important;
+}
 
 // Media Queries - Contact Page
 
@@ -139,6 +193,9 @@
         .social-icons{
             margin: auto;
         }
+        .mess-sub  p {
+            top: 30vh;
+        }
     }
 }
 
@@ -155,6 +212,13 @@
 
         textarea{
             width: 100%;
+        }
+    }
+    .mess-sub  {
+        padding: 20px;
+        p{
+            top: 20vh;
+            font-size: 18px;
         }
     }
 }
