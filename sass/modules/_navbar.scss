@@ -57,6 +57,30 @@ header{
     }
 }
 
+#parent{   /** Parent Education **/
+    width: 100%;
+    height: 60vh;
+    background: chocolate;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/images/r_back.jpg');
+    background-position: center ;
+    background-size: cover;
+    object-fit: contain;
+    position: relative;
+
+    .contact-pos{
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+
+        p{
+            font-size: 4rem;
+            font-weight: bolder;
+        }
+    }
+}
+
 .hero-home{
     display: flex;
     align-items: center;
