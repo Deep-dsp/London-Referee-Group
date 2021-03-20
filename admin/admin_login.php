@@ -45,7 +45,7 @@ if (isset($_POST['submit'])) {
          <div class="user-contain">
                 <div class="text-info">
                 <div class="logo">
-                <img src="../images/logo.png" alt="">
+                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
                 </div>
                 <h2>Welcome Back</h2>
                 <p>To keep connected with us please with us please login with your personal information by username and password</p>
