@@ -16,6 +16,9 @@ if(isset($_GET["id"])){
 } else {
     // user must want to see all items in the database
     $allUsers = getAllUsers($pdo);
+   
 
     return $allUsers;
+    
 }
+

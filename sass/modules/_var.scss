@@ -2,3 +2,43 @@ $default-family: arial,helvetica, sans-serif;
 $second-font: 'Carter One', cursive;
 $desktop-size: 1024px;
 $tablet-size: 700px;
+
+
+  @keyframes backInDown {
+    0% {
+      -webkit-transform: translateY(-1200px) scale(0.7);
+      transform: translateY(-1200px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    80% {
+      -webkit-transform: translateY(0px) scale(0.7);
+      transform: translateY(0px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes backInLeft {
+    0% {
+      -webkit-transform: translateX(-2000px) scale(0.7);
+      transform: translateX(-2000px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    80% {
+      -webkit-transform: translateX(0px) scale(0.7);
+      transform: translateX(0px) scale(0.7);
+      opacity: 0.7;
+    }
+  
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+    }
+  }

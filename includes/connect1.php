@@ -1,12 +1,13 @@
 <?php 
+   
+
     $db_dsn = array( 
         'host' => 'localhost',
-        'dbname' => 'db_LRG',
+        'dbname' => 'db_events',
         'charset' => 'utf8'
     );
 
     $dsn = 'mysql:'.http_build_query($db_dsn, '', ';');
-
 
     //This is the DB credentials
 

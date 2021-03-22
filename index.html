@@ -135,8 +135,18 @@
                 <p id="gal-title">Gallery</p>
                 <p id="about-gal">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage But
                 who has any right</p>
-                <div class="gallery-info">
+                <div id="app1">
                     <div class="card">
+                        <ul>
+                            <newevent @showmydata="showEventData" v-for="program in eventmodel" :program="program" :key="program.id"></newevent>
+                        </ul>
+                    </div>
+                        <section class="bio-event" :class=" {'show-event' : showBioEvent}">
+                            <h2>{{currentEvent.title}}</h2>
+                            
+                        </section>
+                   
+                    <!-- <div class="card">
                         <div class="img-box">
                             <img src="images/ref.jpg" alt="">
                         </div>
@@ -161,7 +171,7 @@
                         <p>Meet our coolest team of referees</p>
                             <a href="#">More<i class="long arrow alternate right icon"></i></a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- Parterns Starts -->
@@ -308,6 +318,7 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script defer type="module" src="scripts/main.js"></script>
 </body>
 </html>
