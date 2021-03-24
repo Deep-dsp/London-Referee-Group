@@ -105,7 +105,7 @@ header{
     
      img{
         padding-top: 10px;
-        width: 150px;
+        width: 98px;
         height: auto;
     }
 }
@@ -346,5 +346,29 @@ nav
 
     #ab-contact .contact-pos p{
         font-size: 2.5rem;
+    }
+
+    .membership-letter-section{
+        .ref-panel{
+           .about-ref{
+               p:nth-child(2){
+                   text-align: justify;
+                   width: 100%;
+               }
+               
+               .log-button{
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                //    background: red;
+                    input{
+                        width: 100%;
+                    }
+                    button{
+                        width: 50%;
+                    }
+               }
+           } 
+        }
     }
 }
