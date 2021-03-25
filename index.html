@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Homepage | LRG</title>
     <link rel="stylesheet" href="https://icons8.com/icon/-ADHqU46QZdK/certificate">
@@ -16,12 +15,11 @@
             <h2 style="display: none;">Home Page</h2>
             <div class="hero-home">
                 <div class="logo">
-                    <a href="#"><img src="images/logo_up.png" alt="LRG Logo"></a>
+                    <a href="#"><img src="images/logo.png" alt="LRG Logo"></a>
                 </div>
                 <nav>
                     <h3 style="display: none;">Navbar</h3>
                     <ul class="nav-links">
-
                         <li><a href="index.html" class="nav-active">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <div class="dropdown">
@@ -141,18 +139,8 @@
                 <p id="gal-title">Gallery</p>
                 <p id="about-gal">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage But
                 who has any right</p>
-                <div id="app1">
+                <div class="gallery-info">
                     <div class="card">
-                        <ul>
-                            <newevent @showmydata="showEventData" v-for="program in eventmodel" :program="program" :key="program.id"></newevent>
-                        </ul>
-                    </div>
-                        <section class="bio-event" :class=" {'show-event' : showBioEvent}">
-                            <h2>{{currentEvent.title}}</h2>
-                            
-                        </section>
-                   
-                    <!-- <div class="card">
                         <div class="img-box">
                             <img src="images/ref.jpg" alt="">
                         </div>
@@ -177,7 +165,7 @@
                         <p>Meet our coolest team of referees</p>
                             <a href="#">More<i class="long arrow alternate right icon"></i></a>
                     </div>
-                </div> -->
+                </div>
             </div>
         </section>
         <!-- Parterns Starts -->
@@ -285,7 +273,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script defer type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </body>
 </html>

@@ -12,11 +12,7 @@
     h2 {
         
         margin-bottom: 10px;
-<<<<<<< HEAD
-        font-family: 'Poppins', sans-serif;
-=======
         font-family: $second-font;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
         font-size: 20px;
         text-transform: uppercase;
         color: #cb1a2b;
@@ -45,11 +41,7 @@
         h2 {
             margin-top: 20px;
             margin-bottom: 10px;
-<<<<<<< HEAD
-            font-family: 'Poppins', sans-serif;
-=======
             font-family: $second-font;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
             font-size: 20px;
             text-transform: uppercase;
             color: #cb1a2b;
@@ -69,12 +61,6 @@
         }
     }
 }
-<<<<<<< HEAD
-@media screen and (min-width: 700px) {
-    .about-info {
-       display: grid;
-       grid-template-columns: 400px 500px;
-=======
 #app {
     .people-pic {
         margin: 20px;
@@ -102,33 +88,17 @@
     .about-info {
        display: grid;
        grid-template-columns: 350px 400px;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
         .about-pic img {
             width: 90%;
         }
         .about-text {
             margin-left: 40px;
-<<<<<<< HEAD
-            margin-top: 40px;
-=======
             margin-top: 10px;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
         }
     }
     .about-history {
         display: grid;
-<<<<<<< HEAD
-       grid-template-columns: 400px 500px;
-       
-       .history-text {
-        margin-left: 40px;
-        margin-top: 40px;
-       }
-    }
-
-}
-=======
-       grid-template-columns: 350px 400px;
+        grid-template-columns: 350px 400px;
        
        .history-text {
         margin-left: 40px;
@@ -191,4 +161,3 @@
     }
 
 }
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551

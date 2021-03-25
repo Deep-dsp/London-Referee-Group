@@ -87,11 +87,7 @@
             top: 0;
             left: -15px;
             opacity: 0;
-<<<<<<< HEAD
-            color: #3f51b5;
-=======
             color: orange;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
             -webkit-transform: translate3d(0, 25%, 0);
             transform: translate3d(0, 25%, 0);
         }
@@ -102,11 +98,7 @@
         
     }
     .button--winona.button--inverted {
-<<<<<<< HEAD
-        color: #7986cb;
-=======
         color: orange;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
     }
     .button--winona.button--inverted:after {
         color: #fff;
@@ -120,21 +112,12 @@
         transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
     }
     .button--winona:hover {
-<<<<<<< HEAD
-        border-color: #3f51b5;
-        background-color: rgba(63, 81, 181, 0.1);
-    }
-    .button--winona.button--inverted:hover {
-        border-color: #21333C;
-        background-color: #21333C;
-=======
         border-color: orange;
         background-color: rgba(231, 186, 101, 0.1);
     }
     .button--winona.button--inverted:hover {
         border-color: orange;
         background-color: orange;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
     }
     .button--winona:hover::after {
         opacity: 1;
@@ -161,10 +144,6 @@
 }
 
 //welcome page
-<<<<<<< HEAD
-.info-user {
-    margin: 20px;
-=======
 .info-pic1 {
     margin: 30px;
     img {
@@ -173,7 +152,6 @@
 }
 .info-user {
     margin: 100px 30px 30px 30px;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
     h2{
         font-weight: bold;
         font-size: 20px;
@@ -197,11 +175,7 @@
 }
 .user-edit {
 
-<<<<<<< HEAD
-           padding: 10px;
-=======
            padding: 9px;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
            color:orange;
            border-radius: 8px;
           border: 2px solid orange;
@@ -260,8 +234,6 @@
             border: 2px solid orange;
             border-radius: 10px;
             height: 40px;
-<<<<<<< HEAD
-=======
             
         }
     }
@@ -272,13 +244,10 @@
         margin: 20px;
         img {
             width: 100%;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
         }
     }
 }
 //edit user
-<<<<<<< HEAD
-=======
 .edit-info {
     margin-top: 100px;
     .edit-pic {
@@ -288,7 +257,6 @@
         }
     }
 }
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
 .edit-con {
     margin: 20px;
     h2 {
@@ -330,8 +298,6 @@
         }
     }
 }
-<<<<<<< HEAD
-=======
 
 //delete user
 .delete-con {
@@ -380,7 +346,6 @@
     
 }
 
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
 @media screen and (min-width: 700px) {
     .user-contain{
         margin-right: 20px;
@@ -414,11 +379,6 @@
         margin: 40px;
     }
     .create-con {
-<<<<<<< HEAD
-        input {
-            width: 300px;
-        }
-=======
         margin-left: 50px;
         input {
             width: 300px;
@@ -459,7 +419,6 @@
     }
     .delete-con {
         margin-top: 130px;
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
     }
 }
 @media screen and (min-width: 1024px) {
@@ -467,8 +426,6 @@
         display: grid;
        grid-template-columns: 550px 500px;
     }
-<<<<<<< HEAD
-=======
     .info-user {
         margin: 100px 30px 30px 30px;
     }
@@ -494,5 +451,4 @@
         margin-top: 50px;
        }
     }
->>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
 }
