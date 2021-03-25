@@ -16,7 +16,11 @@ import ChatMessage from "./components/TheMessageComponent.js";
 
         created: function(){
             console.log("vue is mounted, trying a fetch for the initial data");
+<<<<<<< HEAD
             fetchData("./includes/index.php")
+=======
+            fetchData("./includes/index1.php")
+>>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
             .then(data => { 
                     
                 data.forEach(people =>this.carmodel.push(people));

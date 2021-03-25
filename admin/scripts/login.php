@@ -20,7 +20,17 @@ function login($username, $password, $ip, $current_time) {
             $found_user_id = $found_user['user_id'];
             $pass = $found_user['user_pass'];//fetch user_pass from database
             $login_success = $found_user['user_success'];//fetch user_pass from database
+<<<<<<< HEAD
             
+=======
+            $user_new = $found_user['user_new'];
+
+            //suspend user
+            $user_time_start = $found_user['user_date'];
+            $time_left = strtotime($current_time) - strtotime($user_time_start);
+            $time_count = 44000 - $time_left;
+
+>>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
             //fetch user_attempts from database
             $attempts = $found_user['user_attempts'];
                     //if the attempts >= then account will lock it
@@ -29,12 +39,20 @@ function login($username, $password, $ip, $current_time) {
                     } 
                     //strcmp — Binary safe string comparison
                     //compare the password
+<<<<<<< HEAD
                     if(strcmp($password, $pass) === 0) {
+=======
+                    if(strcmp($password, $pass) === 0 && $user_new === "O") {
+>>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
                     //write username and userid into session
                     $_SESSION['user_id'] = $found_user_id;
                     $_SESSION['user_name'] = $found_user['user_fname'];
                     $_SESSION['user_level'] = $found_user['user_level'];
+<<<<<<< HEAD
                     
+=======
+                    $user_new = $found_user['user_new'];
+>>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
                     //last login time
                     $last_login = $found_user['user_current_login'];//fetch user_current_login from the database
                     $_SESSION['last_login'] = $last_login;//write it into session
@@ -57,6 +75,43 @@ function login($username, $password, $ip, $current_time) {
                     );
                     
                 redirect_to('index.php');
+<<<<<<< HEAD
+=======
+            }  if (strcmp($password, $pass) === 0 && $user_new === "N"){
+                if ($time_count <= 0) {
+                    $update_user_suspend = 'UPDATE tbl_user SET user_suspended=:suspended WHERE user_name= :username';
+                    $user_suspend_set = $pdo->prepare($update_user_suspend);
+                    $user_suspend_set->execute(
+                        array(
+                            ':username'=>$username,
+                            ':suspended'=>"SUSPENDED"
+                        )
+                        );
+                        return 'Your account was suspended.';
+            } else {
+                $_SESSION['user_id'] = $found_user_id;
+                $_SESSION['user_name'] = $found_user['user_fname'];
+                $_SESSION['user_level'] = $found_user['user_level'];
+                $last_login = $found_user['user_current_login'];
+                $_SESSION['last_login'] = $last_login;
+                $user_new = $found_user['user_new'];
+                $update_user_query = 'UPDATE tbl_user SET user_ip= :user_ip, user_current_login= :current_time, user_last_login= :lastlogin, user_attempts= :userattempts, user_success= :success WHERE user_id= :user_id';
+                $update_user_set = $pdo->prepare($update_user_query);
+                $update_user_set->execute(
+                        array(
+                            ':user_ip'=>$ip,
+                            ':user_id'=>$found_user_id,
+                            ':current_time'=>$current_time,
+                            ':lastlogin'=>$last_login,
+                            ':userattempts'=>"0",
+                            ':success'=>$login_success
+                            
+                        )
+                    );
+                    redirect_to('admin_edituser.php');  
+                }
+
+>>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
             } else if (strcmp($password, $pass) !== 0) {
                 //do the attempts until 3
                 $another_attempts = $attempts + 1;

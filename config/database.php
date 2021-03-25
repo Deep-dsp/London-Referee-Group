@@ -56,6 +56,17 @@ class Database
     // get the database connection
     public function getConnection()
     {
+<<<<<<< HEAD
         return $this->conn;
     }
 }
+=======
+
+       
+
+        
+
+        return $this->conn;
+    }
+}
+>>>>>>> 54dda27dff19e92c0592c8421b216112b8058551

@@ -10,7 +10,11 @@ export default{
            
         }
     },
+<<<<<<< HEAD
     template: `<li @click="logClicked"> <img :src="'images/' + people.avatar" :alt='people.name + " image"'  >
+=======
+    template: `<li class ="people-pic" @click="logClicked"> <img :src="'images/' + people.avatar" :alt='people.name + " image"' >
+>>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
         <p>{{people.name}} </p>
     
         

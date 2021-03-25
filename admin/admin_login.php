@@ -45,7 +45,11 @@ if (isset($_POST['submit'])) {
          <div class="user-contain">
                 <div class="text-info">
                 <div class="logo">
+<<<<<<< HEAD
                 <img src="../images/logo.png" alt="">
+=======
+                <a href="../index.html"><img src="../images/logo.png" alt=""></a>
+>>>>>>> 54dda27dff19e92c0592c8421b216112b8058551
                 </div>
                 <h2>Welcome Back</h2>
                 <p>To keep connected with us please with us please login with your personal information by username and password</p>

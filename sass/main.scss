@@ -1,7 +1,10 @@
+@import './modules/var';
 @import './modules/navbar';
 @import './modules/homepage';
 @import './modules/footer';
 @import './modules/needref';
+@import  './modules/about';
+@import './modules/user';
 @import './modules/contact';
 @import './modules/officialsDev';
 @import './modules/_parent';
@@ -17,7 +20,9 @@ body{
 
     font-family: 'Poppins', sans-serif;
 }
-
+.hidden {
+    display: none;
+}
 .ham-burger i{
     font-size: 2rem;
     color: #434343;

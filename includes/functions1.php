@@ -4,8 +4,8 @@
 
     $result = array();
 
-    function getAllUsers($conn) {
-        $query = "SELECT * FROM tbl_executive";
+    function getAllEvent($conn) {
+        $query = "SELECT * FROM events";
 
         $runQuery = $conn->query($query);
 
@@ -17,8 +17,8 @@
         echo (json_encode($result));
     }
 
-    function getSingleUser($conn, $id) {
-        $query = "SELECT * FROM tbl_executive WHERE id=" . $id . "";
+    function getSingleEvent($conn, $id) {
+        $query = "SELECT * FROM events WHERE id=" . $id . "";
 
         $runQuery = $conn->query($query);
 
@@ -29,7 +29,3 @@
         //return $result;
         echo (json_encode($result));
     }
-
-    
-
-    
