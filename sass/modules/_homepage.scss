@@ -522,6 +522,33 @@
         }
     }
 }
+// Database  events
+
+#app1 {
+    text-align: center;
+
+    .card {
+
+        img {
+            width: 50%;
+            border-radius: 8%;
+        }
+    }
+    .event-pic {
+        
+        margin-bottom: 30px;
+        h2 {
+            font-weight: bold;
+            margin-top: 20px;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
 // Social Media Feature Section 
 
 // Service - Media Queries
@@ -529,6 +556,21 @@
 @media only screen and (max-width:1400px){
     .service-section .gallery-div{
         width: 100%;
+    }
+
+    #app1 {
+        .card{
+            ul{
+                display: grid;
+                grid-template-columns: 320px 320px 320px;
+                img {
+                    height: 70%;
+                }
+                p {
+                    margin: 0 10px;
+                }
+            }
+        }
     }
 }
 
@@ -648,6 +690,22 @@
             display: none;
         }
     }
+
+    //database event {
+        #app1 {
+            .card{
+                ul{
+                    display: grid;
+                    grid-template-columns: 320px 320px 320px;
+                    img {
+                        height: 70%;
+                    }
+                    p {
+                        margin: 0 10px;
+                    }
+                }
+            }
+        }
 }
 
 @media only screen and (max-width:768px){
@@ -665,6 +723,14 @@
 
             p:nth-child(1){
                 font-size: 20px;
+            }
+        }
+    }
+
+    #app1 {
+        .card {
+            img {
+                width: 50%;
             }
         }
     }
