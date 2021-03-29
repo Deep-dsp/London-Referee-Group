@@ -1,0 +1,52 @@
+.nav-bar-new nav{
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    height: 7vh;
+    .nav-wrapper a i{
+        color: #292929;
+        font-size: 40px;
+    }
+
+    .brand-logo{
+        img.responsive-img{
+            margin-top: 9px;
+        }
+    }
+    
+    ul li a{
+        color: #000;
+    }
+
+    ul li:last-child a{
+        color: #fff;
+        font-weight: bold;
+        background-color: rgb(255, 0, 51);
+    }
+
+    ul.dropdown-content{
+        position: absolute;
+        top: -7.5vh;
+    }
+}
+
+.nav-bar-new{
+    .sidenav{
+        li{
+            margin-top: 10px;
+            a.btn{
+                color: #fff;
+                font-weight: bold;
+                background-color: rgb(255, 0, 51);
+            }
+
+            a.btn:hover{
+                background-color: rgb(211, 0, 42);
+            }
+        }
+
+        div.legal__links{
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

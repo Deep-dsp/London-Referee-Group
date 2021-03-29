@@ -6,47 +6,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Contact Us | LRG</title>
     </head>
     <body>
-        <main>
-            <div id="ab-contact">
-                <h2 style="display: none;">Contact Us Page</h2>
-                <div class="hero-home">
-                    <div class="logo">
-                        <img src="images/logo.png" alt="">
-                    </div>
-                    <nav>
-                        <h3 style="display: none;">Navbar</h3>
-                        <ul class="nav-links">
+        
+        <div class="nav-bar-new">
+            
+            <nav>
+                <div class="nav-wrapper container">
+                    <a href="#!" class="brand-logo"><img class="responsive-img" src="images/final_logo.png" alt=""></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">short_text</i></a>
+                        <ul class="right hide-on-med-and-down">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-                            <div class="dropdown">
-                                <button class="dropbtn">Programs</button>
-                                <div class="dropdown-content">
-                                    <a href="officialsDev.html">Officials Development</a>
-                                <a href="membership.html">Membership Program</a>
-                                <a href="parent.html">Parent Education</a>
-                                </div>
-                            </div> 
-                            <!-- <li><a href="#">Refree</a></li>
-                            <li><a href="#">Membership</a></li> -->
-                            <li><a href="contact.html" class="nav-active">Contact</a></li>
+                            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Programs</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a class="waves-effect waves-light btn">Log In</a></li>
                         </ul>
-                    </nav>
-                    <div class="ref-button">
-                        <div class="log-button">
-                            <button>Log In</button>
-                        </div>
-                        <div class="ham-burger">
-                            <i class="bars icon"></i>
-                        </div>
-                    </div>
                 </div>
-                <div class="contact-pos">
-                    <p>Contact Us</p><br>
+            </nav>
+
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="officialsDev.html">Officials Development Program</a></li>
+                <li><a href="parent.html">Parent Education</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+                <li><a class="waves-effect waves-light btn">Log In</a></li><br>
+
+                <div class="legal__links">
+                    <i class="instagram icon"></i>
+                    <i class="facebook icon"></i>
+                    <i class="twitter icon"></i>
                 </div>
-            </div>
+                
+            </ul>
+            <!-- DropDown -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="#!">Officials Development</a></li>
+                <li><a href="#!">Parent Education</a></li>
+                <li><a href="#!">Membership</a></li>
+              </ul>
+          
+        </div>
+        <main>
             <section class="contact-section">
                 <h3 style="display: none;"> Contact Form</h3>
                     <div class="form-block">
@@ -167,6 +174,19 @@
                 </div>
             </div>
         </footer>
-        <script type="module" src="scripts/components/navside.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $('.dropdown-trigger').dropdown(
+                    {
+                        constrainWidth: false
+                    }
+                    );
+
+                    $('.sidenav').sidenav();
+                });
+        </script>
+
     </body>
     </html>
