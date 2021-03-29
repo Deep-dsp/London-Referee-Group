@@ -17,7 +17,7 @@
         p{
             font-size: 2rem;
             font-weight: bold;
-            color: crimson;
+            color: rgb(255, 0, 51);
         }
 
         form{
@@ -31,17 +31,17 @@
                     padding: 12px 60px;
                     // margin: 8px 0;
                     // display: inline-block;
-                    border: 1px solid rgb(255, 81, 1);
+                    border: 1px solid rgb(255, 174, 136);
                     border-radius: 4px;
                     box-sizing: border-box;
-                    background-color: rgb(255, 214, 198);
+                    // background-color: rgb(255, 214, 198);
             }
 
             button{
                 cursor: pointer;
-                width: 80%;
+                width: 150px;
                 padding: 12px 20px;
-                background: #434343;
+                background: rgb(255, 0, 51);
                 color: white;
                 font-size: 1.1rem;
                 font-weight: bold;
@@ -50,7 +50,7 @@
             }
 
             button:hover{
-                background: #747474;
+                background: rgb(211, 0, 42);
             }
         }
     }
@@ -89,7 +89,7 @@
             font-size: 1.25rem;
 
             i{
-                color: crimson;
+                color: rgb(255, 0, 51);
             }
 
             p{

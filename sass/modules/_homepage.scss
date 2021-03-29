@@ -53,6 +53,7 @@
                 align-items: center;
                 justify-content: space-evenly;
                 margin-top: 15px;
+                padding: 15px 0 15px 0;
                 .img-box{
                     width: 150px;
                     height: 150px;
@@ -209,6 +210,18 @@
                 width: 90%;
                 font-size: 1.05rem;
             }
+
+            .log-button{
+                a.btn{
+                    color: #fff;
+                    font-weight: bold;
+                    background-color: rgb(255, 0, 51);
+                }
+        
+                a.btn:hover{
+                    background-color: rgb(211, 0, 43);
+                }
+            }
             
         }
 
@@ -223,7 +236,7 @@
 
     width: 100%;
     height: auto;
-    background: rgb(255, 230, 218);
+    background: rgba(255, 0, 51, 0.05);
 
     display: flex;
     flex-direction: column;
@@ -261,7 +274,7 @@
             // flex-direction: column;
             justify-content: space-evenly;
 
-            .card{
+            .gallery-card{
 
                 width: 30%;
                 display: flex;

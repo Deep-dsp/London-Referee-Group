@@ -8,52 +8,65 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Homepage | LRG</title>
     <link rel="stylesheet" href="https://icons8.com/icon/-ADHqU46QZdK/certificate">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <main>
-        <header>
-            <h2 style="display: none;">Home Page</h2>
-            <div class="hero-home">
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
-                </div>
-                <nav>
-                    <h3 style="display: none;">Navbar</h3>
-                    <ul class="nav-links">
-                        <li><a href="index.html" class="nav-active">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <div class="dropdown">
-                            <button class="dropbtn">Programs</button>
-                            <div class="dropdown-content">
-                              <a href="officialsDev.html">Official Development</a>
-                              <a href="membership.html">Membership Program</a>
-                              <a href="parent.html">Parent Education</a>
-                            </div>
-                        </div> 
-                        <!-- <li><a href="#">Refree</a></li>
-                        <li><a href="#">Membership</a></li> -->
-                        <li><a href="contact.html">Contact</a></li>
+    <!-- Header -->
+    <div class="nav-bar-new">
+            
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo"><img class="responsive-img" src="images/final_logo.png" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">short_text</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Programs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a class="waves-effect waves-light btn">Log In</a></li>
                     </ul>
-                </nav>
-                <div class="ref-button">
-                    <div class="log-button">
-                        <button>Log In</button>
-                    </div>
-                    <div class="ham-burger">
-                        <i class="bars icon"></i>
-                    </div>
-                </div>
             </div>
-            <div class="who-are-we">
-                <h1>Who are we</h1>
-                <p>We are an organization of 225 hockey referees serving London and area.
-                If you are currently looking for an organization to referee your hockey league,
-                our team would like the opportunity to assist</p><br>
-                <div class="log-button">
-                    <a href="about.html"><button>More</button></a>
-                </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="officialsDev.html">Officials Development Program</a></li>
+            <li><a href="parent.html">Parent Education</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+            <li><a class="waves-effect waves-light btn">Log In</a></li><br>
+
+            <div class="legal__links">
+                <i class="instagram icon"></i>
+                <i class="facebook icon"></i>
+                <i class="twitter icon"></i>
             </div>
-        </header>
+            
+        </ul>
+        <!-- DropDown -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="officialsDev.html">Officials Development</a></li>
+            <li><a href="parent.html">Parent Education</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+      
+    </div>
+    <!-- Header -->
+    <main>
+        <!-- Hero Image -->
+        <section class="index-hero">
+
+            <img class="responsive-img" src="images/home-hero.jpg" style="filter:grayscale(0.2);">
+            <div class="index-about">
+                <p>We are an organization of 225 hockey referees serving London and area. If you are currently looking for an organization to referee your hockey league, our team would like the opportunity to assist</p>
+                <a href="about.html" class="waves-effect waves-light btn">More</a>
+            </div>
+           
+       </section>
+       <!-- Hero Image -->
             <section class="service-section">
                 <h2 style="display: none;">Services Section</h2>
                 <div class="gallery-div">
@@ -74,7 +87,7 @@
                                 <img src="https://img.icons8.com/plasticine/100/000000/certificate.png"/>
                             </div>
                             <p>Official Development Program</p>
-                            <p>Take a look at our certifications</p>
+                            <p>Take a look at our certifications and choose best for yourself</p>
                             <a href="officialsDev.html">More<i class="long arrow alternate right icon"></i></a>
                         </div>
                         <div class="card">
@@ -124,8 +137,8 @@
                         <a href="membership.html">Click Here</a> to know more about membership.
                     </p>
                     <div class="log-button">
-                        <input type="text" placeholder="Enter your e-mail">
-                        <button>Join Now</button>
+                        <input placeholder="Enter Your e-mail" id="first_name" type="text" class="validate">
+                        <a class="waves-effect waves-light btn">Join Now</a>
                     </div>
                 </div>
             </div>
@@ -140,7 +153,7 @@
                 <p id="about-gal">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage But
                 who has any right</p>
                 <div class="gallery-info">
-                    <div class="card">
+                    <div class="gallery-card">
                         <div class="img-box">
                             <img src="images/ref.jpg" alt="">
                         </div>
@@ -149,7 +162,7 @@
                             has no annoying.</p>
                         <a href="#">More<i class="long arrow alternate right icon"></i></a>
                     </div>
-                    <div class="card">
+                    <div class="gallery-card">
                         <div class="img-box">
                             <img src="images/h_7.jfif" alt="">
                         </div>
@@ -157,7 +170,7 @@
                         <p>Take an insights of our Tournaments</p>
                             <a href="#">More<i class="long arrow alternate right icon"></i></a>
                     </div>
-                    <div class="card">
+                    <div class="gallery-card">
                         <div class="img-box">
                             <img src="images/AD_2.jpg" alt="">
                         </div>
@@ -274,5 +287,18 @@
         </div>
     </footer>
     <script type="module" src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $('.dropdown-trigger').dropdown(
+                    {
+                        constrainWidth: false
+                    }
+                    );
+
+                    $('.sidenav').sidenav();
+                });
+        </script>
 </body>
 </html>
