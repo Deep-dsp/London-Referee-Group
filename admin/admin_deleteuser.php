@@ -28,50 +28,57 @@ if(!$users){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Delete User</title>
 </head>
 <body>
 
-<div>
-            <div class="hero-home">
-                <div class="logo">
-                    <img src="../images/logo.png" alt="">
-                </div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <div class="dropdown">
-                            <button class="dropbtn">Programs</button>
-                            <div class="dropdown-content">
-                              <a href="#">Junior Mentorship Program</a>
-                              <a href="#">Membership Program</a>
-                              <a href="#">Careers</a>
-                            </div>
-                        </div> 
-                        <!-- <li><a href="#">Refree</a></li>
-                        <li><a href="#">Membership</a></li> -->
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="ref-button">
-                    
-                    <div class="ham-burger">
-                        <i class="bars icon"></i>
-                    </div>
-                </div>
-            </div>
-           
-               
+<!-- Header -->
+<div class="nav-bar-new row">
             
-</div>
-<div class="delete-con">
+            <nav>
+                <div class="nav-wrapper container">
+                    <a href="#!" class="brand-logo"><img class="responsive-img" src="../images/final_logo.png" alt=""></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">short_text</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Programs</a></li>
+                            <li><a href="../contact.html">Contact Us</a></li>
+                            <li></li>
+                        </ul>
+                </div>
+            </nav>
+      
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../officialsDev.html">Officials Development Program</a></li>
+                <li><a href="../parent.html">Parent Education</a></li>
+                <li><a href="../membership.html">Membership</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+      
+                <div class="legal__links">
+                    <i class="instagram icon"></i>
+                    <i class="facebook icon"></i>
+                    <i class="twitter icon"></i>
+                </div>
+                
+            </ul>
+            <!-- DropDown -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="../officialsDev.html">Officials Development</a></li>
+                <li><a href="../parent.html">Parent Education</a></li>
+                <li><a href="../membership.html">Membership</a></li>
+              </ul>
+          
+        </div>
+        <!-- Header -->
+<div class="delete-con container">
         <h2>Delete User Panel</h2>
         <?php echo !empty($message) ? $message : ''; ?>
-
         <a href="index.php" class="delete-back">Back to Dashboard</a>
-
-
         <table>
             <thead>
                 <tr>
@@ -96,5 +103,18 @@ if(!$users){
             </tbody>
         </table>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $('.dropdown-trigger').dropdown(
+                    {
+                        constrainWidth: false
+                    }
+                    );
+
+                    $('.sidenav').sidenav();
+                });
+        </script>
 </body>
 </html>

@@ -11,6 +11,7 @@ confirm_logged_in();
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Admin page panel</title>
 </head>
 <body>
@@ -19,27 +20,25 @@ confirm_logged_in();
             
             <nav>
                 <div class="nav-wrapper container">
-                    <a href="#!" class="brand-logo"><img class="responsive-img" src="images/final_logo.png" alt=""></a>
+                    <a href="#!" class="brand-logo"><img class="responsive-img" src="../images/final_logo.png" alt=""></a>
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">short_text</i></a>
                         <ul class="right hide-on-med-and-down">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About</a></li>
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
                             <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Programs</a></li>
-                            <li class="active"><a href="contact.html">Contact Us</a></li>
-                            <li><a class="waves-effect waves-light btn">Log In</a></li>
+                            <li><a href="../contact.html">Contact Us</a></li>
+                            <li></li>
                         </ul>
                 </div>
             </nav>
       
             <ul class="sidenav" id="mobile-demo">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="officialsDev.html">Officials Development Program</a></li>
-                <li><a href="parent.html">Parent Education</a></li>
-                <li class="active"><a href="membership.html">Membership</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                
-                <li><a class="waves-effect waves-light btn">Log In</a></li><br>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../officialsDev.html">Officials Development Program</a></li>
+                <li><a href="../parent.html">Parent Education</a></li>
+                <li><a href="../membership.html">Membership</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
       
                 <div class="legal__links">
                     <i class="instagram icon"></i>
@@ -50,9 +49,9 @@ confirm_logged_in();
             </ul>
             <!-- DropDown -->
             <ul id='dropdown1' class='dropdown-content'>
-                <li><a href="officialsDev.html">Officials Development</a></li>
-                <li><a href="parent.html">Parent Education</a></li>
-                <li><a href="membership.html">Membership</a></li>
+                <li><a href="../officialsDev.html">Officials Development</a></li>
+                <li><a href="../parent.html">Parent Education</a></li>
+                <li><a href="../membership.html">Membership</a></li>
               </ul>
           
         </div>

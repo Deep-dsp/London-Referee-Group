@@ -19,7 +19,7 @@ function login($username, $password, $ip, $current_time) {
             // we found user in the DB, get him in!
             $found_user_id = $found_user['user_id'];
             $pass = $found_user['user_pass'];//fetch user_pass from database
-            $login_success = $found_user['user_success'];//fetch user_pass from database
+            // $login_success = $found_user['user_success'];//fetch user_pass from database
             $user_new = $found_user['user_new'];
 
             //suspend user
