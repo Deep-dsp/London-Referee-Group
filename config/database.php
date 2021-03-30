@@ -2,13 +2,13 @@
 class Database
 {
     // Note: specify your own database credentials
-    private $host = "localhost";
+    private $host = "heroku_d2f1c20d24bec50";
 
-    private $db_name = "lrg";
+    private $db_name = "us-cdbr-east-03.cleardb.com";
 
-    private $username = "root";
+    private $username = "b2c611f744dca8";
 
-    private $password = "";
+    private $password = "29ddfef5";
 
     #1. add a new private static variable
     private static $instance = null;

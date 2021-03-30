@@ -38,7 +38,6 @@ if (isset($_POST['submit'])){
 </head>
 <body>
         <div class="nav-bar-new row">
-            
             <nav>
                 <div class="nav-wrapper container">
                     <a href="#!" class="brand-logo"><img class="responsive-img" src="../images/final_logo.png" alt=""></a>
