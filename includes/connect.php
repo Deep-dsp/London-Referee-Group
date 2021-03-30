@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
-        'host' => 'localhost',
-        'dbname' => 'lrg',
+        'host' => 'us-cdbr-east-03.cleardb.com',
+        'dbname' => 'heroku_d2f1c20d24bec50',
         'charset' => 'utf8'
     );
 
@@ -10,8 +10,8 @@
 
     //This is the DB credentials
 
-    $db_user = 'root';
-    $db_pass = '';
+    $db_user = 'b2c611f744dca8';
+    $db_pass = '29ddfef5';
 
     try{
         $pdo = new PDO($dsn, $db_user, $db_pass);
