@@ -48,7 +48,7 @@ function login($username, $password, $ip, $current_time) {
                     //count the number login if it success
                     $login_success = $login_success + 1;
 
-                    $update_user_query = 'UPDATE tbl_user SET user_ip= :user_ip, user_current_login= :current_time, user_last_login= :lastlogin, user_attempts= :userattempts, user_success= :success WHERE user_id= :user_id';
+                    $update_user_query = 'UPDATE tbl_user SET user_ip= :user_ip, user_current_login= :current_time, user_last_login= :lastlogin, user_attempts= :userattempts WHERE user_id= :user_id';
                     $update_user_set = $pdo->prepare($update_user_query);
                     $update_user_set->execute(
                         array(
@@ -56,8 +56,8 @@ function login($username, $password, $ip, $current_time) {
                             ':user_id'=>$found_user_id,
                             ':current_time'=>$current_time,
                             ':lastlogin'=>$last_login,
-                            ':userattempts'=>"0",
-                            ':success'=>$login_success
+                            ':userattempts'=>"0"
+                            
                             
                         )
                     );
@@ -81,7 +81,7 @@ function login($username, $password, $ip, $current_time) {
                 $last_login = $found_user['user_current_login'];
                 $_SESSION['last_login'] = $last_login;
                 $user_new = $found_user['user_new'];
-                $update_user_query = 'UPDATE tbl_user SET user_ip= :user_ip, user_current_login= :current_time, user_last_login= :lastlogin, user_attempts= :userattempts, user_success= :success WHERE user_id= :user_id';
+                $update_user_query = 'UPDATE tbl_user SET user_ip= :user_ip, user_current_login= :current_time, user_last_login= :lastlogin, user_attempts= :userattempts WHERE user_id= :user_id';
                 $update_user_set = $pdo->prepare($update_user_query);
                 $update_user_set->execute(
                         array(
@@ -89,8 +89,7 @@ function login($username, $password, $ip, $current_time) {
                             ':user_id'=>$found_user_id,
                             ':current_time'=>$current_time,
                             ':lastlogin'=>$last_login,
-                            ':userattempts'=>"0",
-                            ':success'=>$login_success
+                            ':userattempts'=>"0"
                             
                         )
                     );

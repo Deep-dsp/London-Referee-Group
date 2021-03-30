@@ -25,10 +25,10 @@ function createUser($user_data) {
     
     else {
         $pdo = Database::getInstance()->getConnection();
-        $chars = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz';
-        $password = substr( str_shuffle( $chars ), 0, 8 );
+        // $chars = '1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcefghijklmnopqrstuvwxyz';
+        // $password = substr( str_shuffle( $chars ), 0, 8 );
 
-        $password1 = sha1($password);//encrypting password
+        // $password1 = sha1($password);//encrypting password
 
         $create_user_query = 'INSERT INTO tbl_user (user_fname, user_name, user_pass, user_email, user_level, user_new, user_suspended)';
         $create_user_query .= ' VALUES(:fname, :username, :password, :email, :user_level, :user_new, :nosuspend)';
@@ -38,7 +38,7 @@ function createUser($user_data) {
             array(
                 ':fname'=>$user_data['fname'],
                 ':username'=>$user_data['username'],
-                ':password'=>$password1,
+                ':password'=>$user_data['password'],
                 ':email'=>$user_data['email'],
                 ':user_level'=>$user_data['user_level'],
                 ':user_new'=>"N",
@@ -52,30 +52,31 @@ function createUser($user_data) {
         # otherwise, showing the error message
 
         //send mail
-        if ($create_user_result) {
-            $subject = 'Welcome to Login Panel.';
-            $message = '<html><body>';
-            $message .= '<h2>You has been created an account with this information:</h2>';
-            $message .= '<p>Username:</p>' .$user_data['username'];
-            $message .= '<p>Password:</p>' .$user_data['password'];
-            $message .= '<p>To login your account: <a href="http://localhost:8888/Linh_Le_3014_r2/admin/admin_login.php">Login</a></p>';
-            $message .= '<p>You only have 12 hours to login and edit your account.</p>';
-            $message .= '</body></html>';
-            $from = "noreply@test.ca";
-            $headers = 'MIME-Version: 1.0' . "\r\n";
-            $headers .= 'Content-type: text/html'. "\r\n";
-            $headers .= 'From: '.$from."\r\n";
-            $headers .= 'Reply-To: '.$user_data['fname']. '<'.$user_data['email'].'>' . "\r\n";
-            $headers .= 'X-Mailer: PHP/' . phpversion();
-            $recipient = $user_data['email'];
+        // if ($create_user_result) {
+        //     $subject = 'Welcome to Login Panel.';
+        //     $message = '<html><body>';
+        //     $message .= '<h2>You has been created an account with this information:</h2>';
+        //     $message .= '<p>Username:</p>' .$user_data['username'];
+        //     $message .= '<p>Password:</p>' .$user_data['password'];
+        //     $message .= '<p>To login your account: <a href="http://localhost:8888/Linh_Le_3014_r2/admin/admin_login.php">Login</a></p>';
+        //     $message .= '<p>You only have 12 hours to login and edit your account.</p>';
+        //     $message .= '</body></html>';
+        //     $from = "noreply@test.ca";
+        //     $headers = 'MIME-Version: 1.0' . "\r\n";
+        //     $headers .= 'Content-type: text/html'. "\r\n";
+        //     $headers .= 'From: '.$from."\r\n";
+        //     $headers .= 'Reply-To: '.$user_data['fname']. '<'.$user_data['email'].'>' . "\r\n";
+        //     $headers .= 'X-Mailer: PHP/' . phpversion();
+        //     $recipient = $user_data['email'];
 
-            mail($subject, $message, $headers, $recipient);
+        //     mail($subject, $message, $headers, $recipient);
             redirect_to('index.php');
-        } else {
-            return 'The user did not go through!!';
-        }
+        //  else {
+        //     return 'The user did not go through!!';
+        // }
     }
 }
+
 function getSingleUser($id){
     $pdo = Database::getInstance()->getConnection();
 

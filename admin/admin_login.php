@@ -49,7 +49,7 @@ if (isset($_POST['submit'])) {
                 <a href="../index.html"><img src="../images/admin_logo.png" alt=""></a>
                 </div>
                 <h2>Welcome Back</h2>
-                <p>To keep connected with us please with us please login with your personal information by username and password</p>
+                <p>To keep connected with us please login with your personal information by username and password</p>
                 </div>
                 <div class="user-con">
                     <div class="user-form">
