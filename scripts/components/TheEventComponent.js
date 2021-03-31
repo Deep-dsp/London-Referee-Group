@@ -10,9 +10,10 @@ export default{
            
         }
     },
-    template: `<li class ="event-pic"> <img :src="'images/' + program.img" :alt='program.title + " image"' >
-        <h2>{{program.title}} </h2>
-        <p>{{program.description}}</p>
+    template: `<li class ="event-pic"> 
+                <img :src="'images/' + program.img" :alt='program.title + " image"' >
+                <h2>{{program.title}} </h2>
+                <p>{{program.description}}</p>
         
         </li>`,
 
