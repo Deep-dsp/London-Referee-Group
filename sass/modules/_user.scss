@@ -416,12 +416,21 @@
     //         }
     //     }
     // }
+    // .create-info {
+    //     margin-top: 140px;
+        
+    //     .create-pic {
+    //         margin: 20px;
+    //         img {
+    //             width: 100%;
+    //         }
+    //     }
+    // }
     .create-info {
-        margin-top: 140px;
+        
         .create-pic {
-            margin: 20px;
             img {
-                width: 100%;
+                margin: 100px 0 0 100px;
             }
         }
     }
@@ -467,6 +476,10 @@
        .edit-pic {
         margin-top: 50px;
        }
+    }
+
+    .edit-pic img{
+        margin: 100px 0 0 50px;
     }
 
 }
