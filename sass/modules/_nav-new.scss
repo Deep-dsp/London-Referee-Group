@@ -104,6 +104,22 @@
         background: rgba(255, 255, 255, 0.8);
 
         border: 1px solid rgb(255, 0, 51);
+
+        animation-name: homecircle;
+        animation-duration: 5s;
+        animation-timing-function: ease;
+
+        @keyframes homecircle {
+            0%{
+               margin-left: -100%;
+               transform: scale(-0.5);
+               opacity: 0;
+            }
+            100%{
+                margin-left: 0%;
+                opacity: 1;
+            }
+        }
         p{
             text-align: center;
         }
