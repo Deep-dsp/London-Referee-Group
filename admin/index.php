@@ -16,7 +16,7 @@ confirm_logged_in();
 </head>
 <body>
 <!-- Header -->
-<div class="nav-bar-new">
+<div class="nav-bar-new row">
             
             <nav>
                 <div class="nav-wrapper container">
@@ -58,7 +58,7 @@ confirm_logged_in();
         <!-- Header -->
            
 
-<div class="info-pic-con">
+<div class="info-pic-con container">
     <div class="info-user">
 
         <h2>Welcome to the admin page panel, <?php echo $_SESSION['user_name'];?>!</h2>
