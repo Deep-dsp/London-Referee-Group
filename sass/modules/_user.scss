@@ -251,6 +251,7 @@
 }
 //edit user
 .edit-info {
+    padding: 50px 0;
     margin-top: 100px;
     .edit-pic {
         margin: 20px;
@@ -292,6 +293,7 @@
            font-size: 16px;
         }
         select{
+            display: block;
             margin: 5px 0px;
             height: 30px;
             border: 2px solid orange;
