@@ -50,7 +50,7 @@ $results['name'] = $visitor_name;
 $results['message'] = $visitor_message;
 
 $email_subject = '';
-$email_recipient = 'linhkhanh1127@gmail.com';
+$email_recipient = 'deep.guru97@gmail.com';
 
 
 //sprinf - Return a formatted string
@@ -58,7 +58,7 @@ $email_message = sprintf('Name: %s, Email: %s, Message: %s', $visitor_name, $vis
 // $email_message .="Option Selected:".clean_string($_POST['gender']);
 
 $email_headers = array(
-    'From' => 'linhkhanh1127@gmail.com',
+    'From' => 'deep.guru97@gmail.com',
     'Reply-To' => $visitor_name.'<'.$vistor_email.'>',
     
     // 'From'=>$visitor_email

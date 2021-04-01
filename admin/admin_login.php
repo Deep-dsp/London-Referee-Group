@@ -37,18 +37,20 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <title>Welcome to Login Page</title>
 </head>
 <body>
         
-     <div class="user2"> 
+     <div class="user2 container"> 
          <div class="user-contain">
                 <div class="text-info">
                 <div class="logo">
-                <img src="../images/logo.png" alt="">
+                <a href="../index.html"><img src="../images/admin_logo.png" alt=""></a>
                 </div>
                 <h2>Welcome Back</h2>
-                <p>To keep connected with us please with us please login with your personal information by username and password</p>
+                <p>To keep connected with us please login with your personal information by username and password</p>
                 </div>
                 <div class="user-con">
                     <div class="user-form">
@@ -61,13 +63,20 @@ if (isset($_POST['submit'])) {
                 <button type="submit" name="submit" class="button button--winona button--border-thin button--round-s" data-text="Sign In"><span>Sign In</span></button>
                 </div>
                 </form>
+                <div class="back-link" style="margin-top:10px;">
+                    <a href="../index.html">Go Back To Home Page <span>&#8594;</span></a>
+                </div>
                 </div>
                 
 
                 </div>
                 <div class="user-social">
-                    <h2>Or you can join with</h2>
-
+                    <h5>Or you can connect with us on</h5>
+                    <div class="legal__links">
+                        <i class="instagram icon"></i>
+                        <i class="facebook icon"></i>
+                        <i class="twitter icon"></i>
+                    </div>
                 </div>
             </div>
                 <div class="user-pic">

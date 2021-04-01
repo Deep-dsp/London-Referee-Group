@@ -18,7 +18,7 @@ if (isset($_POST['submit'])){
         'user_level' => isCurrentUserAdminAbove()?trim($_POST['user_level']):'0',
         'id' => $id,
     );
-    $message = editUser($data);
+    $message = editUser($id, $data);
 }
 ?>
 
@@ -32,43 +32,100 @@ if (isset($_POST['submit'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Edit User Panel</title>
 </head>
 <body>
+        <div class="nav-bar-new row">
+            <nav>
+                <div class="nav-wrapper container">
+                    <a href="#!" class="brand-logo"><img class="responsive-img" src="../images/final_logo.png" alt=""></a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">short_text</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="../index.html">Home</a></li>
+                            <li><a href="../about.html">About</a></li>
+                            <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Programs</a></li>
+                            <li><a href="../contact.html">Contact Us</a></li>
+                            <li></li>
+                        </ul>
+                </div>
+            </nav>
+      
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../officialsDev.html">Officials Development Program</a></li>
+                <li><a href="../parent.html">Parent Education</a></li>
+                <li><a href="../membership.html">Membership</a></li>
+                <li><a href="../contact.html">Contact Us</a></li>
+      
+                <div class="legal__links">
+                    <i class="instagram icon"></i>
+                    <i class="facebook icon"></i>
+                    <i class="twitter icon"></i>
+                </div>
+                
+            </ul>
+            <!-- DropDown -->
+            <ul id='dropdown1' class='dropdown-content'>
+                <li><a href="../officialsDev.html">Officials Development</a></li>
+                <li><a href="../parent.html">Parent Education</a></li>
+                <li><a href="../membership.html">Membership</a></li>
+            </ul>
+          
+        </div>
+        <!-- Header -->
+    <div class="edit-info container">
     <div class="edit-con">
-    <h2>Edit User </h2>
-    
-    <?php if(!empty($current_user)): ?>
-    <form action="admin_edituser.php" method="post" class="edit-form">
-    <?php while($user_info = $current_user->fetch(PDO::FETCH_ASSOC)):?>
-            <label for="first_name">First Name</label>
-            <input id="first_name" type="text" name="fname" value="<?php echo $user_info['user_fname'];?>"><br><br>
+            <h2>Edit User </h2>
+            
+            <?php if(!empty($current_user)): ?>
+            <form action="admin_edituser.php" method="post" class="edit-form">
+            <?php while($user_info = $current_user->fetch(PDO::FETCH_ASSOC)):?>
+                    <label for="first_name">First Name</label>
+                    <input id="first_name" type="text" name="fname" value="<?php echo $user_info['user_fname'];?>"><br><br>
 
-            <label for="username">Username</label>
-            <input id="username" type="text" name="username" value="<?php echo $user_info['user_name'];?>"><br><br>
+                    <label for="username">Username</label>
+                    <input id="username" type="text" name="username" value="<?php echo $user_info['user_name'];?>"><br><br>
 
-            <label for="password">Password</label>
-            <input id="password" type="text" name="password" value="<?php echo $user_info['user_pass'];?>"><br><br>
+                    <label for="password">Password</label>
+                    <input id="password" type="text" name="password" value="<?php echo $user_info['user_pass'];?>"><br><br>
 
-            <label for="email">Email</label>
-            <input id="email" type="email" name="email" value="<?php echo $user_info['user_email'];?>"><br><br>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" value="<?php echo $user_info['user_email'];?>"><br><br>
 
-            <?php if(isCurrentUserAdminAbove()):?>
-                <label for="user_level">User Level</label>
-                <select id="user_level" name="user_level">
-                    <?php $user_level_map = getUserLevelMap();
-                        foreach ($user_level_map as $val => $label):?>
-                    <option value="<?php echo $val;?>" <?php echo ($val === (int)$user_info['user_level'])? 'selected':'';?>><?php echo $label;?>
-                    </option>
-                    <?php endforeach;?>
-                </select><br><br>
+                    <?php if(isCurrentUserAdminAbove()):?>
+                        <label for="user_level">User Level</label>
+                        <select id="user_level" name="user_level">
+                            <?php $user_level_map = getUserLevelMap();
+                                foreach ($user_level_map as $val => $label):?>
+                            <option value="<?php echo $val;?>" <?php echo ($val === (int)$user_info['user_level'])? 'selected':'';?>><?php echo $label;?>
+                            </option>
+                            <?php endforeach;?>
+                        </select><br><br>
+                    <?php endif;?>
+
+                    <button type="submit" name="submit">Update User</button>
+                <?php endwhile;?>
+            </form>
             <?php endif;?>
-
-            <button type="submit" name="submit">Update User</button>
-        <?php endwhile;?>
-    </form>
-    <?php endif;?>
+    </div>
+    <div class="edit-pic"><img src="../images/user_edit.jpeg" alt=""></div>
     </div>
     <div class="mess-con"><?php echo !empty($message)?$message:'';?>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $('.dropdown-trigger').dropdown(
+                    {
+                        constrainWidth: false
+                    }
+                    );
+
+                    $('.sidenav').sidenav();
+                });
+        </script>
 </body>
 </html>

@@ -7,64 +7,78 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Officials Development Program | LRG</title>
 </head>
 <body>
-    <main>
-        <div id="ab-contact">
-            <div class="hero-home">
-                <div class="logo">
-                    <img src="images/logo.png" alt="">
-                </div>
-                <nav>
-                    <ul class="nav-links">
-                        <li><a href="/index.html">Home</a></li>
+    <div class="nav-bar-new">
+            
+        <nav>
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo"><img class="responsive-img" src="images/final_logo.png" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">short_text</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>
-                        <div class="dropdown">
-                            <button class="dropbtn">Programs</button>
-                            <div class="dropdown-content">
-                              <a href="officialsDev.html">Officials Development</a>
-                              <a href="membership.html">Membership Program</a>
-                              <a href="parent.html">Parent Education</a>
-                            </div>
-                        </div> 
-                        <!-- <li><a href="#">Refree</a></li>
-                        <li><a href="#">Membership</a></li> -->
-                        <li><a href="contact.html">Contact</a></li>
+                        <li class="active"><a class='dropdown-trigger' href='#' data-target='dropdown1'>Programs</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="admin/admin_login.php" class="waves-effect waves-light btn">Log In</a></li>
                     </ul>
-                </nav>
-                <div class="ref-button">
-                    <div class="log-button">
-                        <button>Log In</button>
-                    </div>
-                    <div class="ham-burger">
-                        <i class="bars icon"></i>
-                    </div>
-                </div>
             </div>
-            <div class="contact-pos">
-                <p>Officials Development</p><br>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="active"><a href="officialsDev.html">Officials Development Program</a></li>
+            <li><a href="parent.html">Parent Education</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            
+            <li><a href="admin/admin_login.php" class="waves-effect waves-light btn">Log In</a></li><br>
+
+            <div class="legal__links">
+                <i class="instagram icon"></i>
+                <i class="facebook icon"></i>
+                <i class="twitter icon"></i>
             </div>
-        </div>
+            
+        </ul>
+        <!-- DropDown -->
+        <ul id='dropdown1' class='dropdown-content'>
+            <li class="active"><a href="officialsDev.html">Officials Development</a></li>
+            <li><a href="parent.html">Parent Education</a></li>
+            <li><a href="membership.html">Membership</a></li>
+          </ul>
+      
+    </div>
+    <main>
+        <section class="contact-hero hide-on-med-and-down">       
+            <img class="responsive-img" src="images/hero_img2.jpg" style="width: 100%;">
+            <h2 class="parent-title" style="color: #fff;">Officials Development</h2>
+           
+       </section>
         <section class="officials-section">
             <h3>Level System</h3>
-            <p>If you are interested in becoming a hockey 
-                official, this is for you! It will provide all 
-                the information needed to get your officiating career started.<br><br>
-
-                The level system, Level I through Level VI, is the foundation for the training and development of officials across Canada. Hockey Canada has categorized the hockey played in Canada into four basic streams, each with different priorities. They include:
+            <p>Officials play a vital role in the game, they are often 
+                described as the third team on the ice. The basic role of the on-ice officials can be broken down into two simple words – safe and fair. For a referee to view and officiate the game with these two words in mind, they should be able to call a game that is acceptable to all of the participants.<br><br>
+                The LRG training and development program is designed to assist young officials learn their role in the game and develop the skills necessary to ensure a safe and fair hockey game. This program consistently proves to be instrumental with guiding young officials for improvement of
+            
 
                 <span>
                     <ul class="priorities">
-                        <li>initiation</li>
-                        <li>Recreational</li>
-                        <li>Competitive</li>
-                        <li>Program of Excellence</li>
+                        <li>Decision making skills</li>
+                        <li>On ice awareness as an official</li>
+                        <li>Communication skills</li>
+                        <li>Applying the rules of the game to promote safe and fair play</li>
                     </ul>
                 </span>
             </p>
 
-            <p>The Hockey Canada Officiating Program has opportunities for everyone from 
+            <p>As part of this program we assign experienced officials as 
+                mentors to assist with the training and develop our younger officials. The on-ice mentorship and off-ice guidance brings practical and classroom style learning together with positive enforcement in order to build their self-confidence.
+                <br><br>The Hockey Canada Officiating Program has opportunities for everyone from 
                 the Initiation 
                 at Level I, through to the Program of Excellence at Levels V and VI.<br><br>
 
@@ -143,9 +157,11 @@
     <footer>
         <div class="footer">
             <div class="footer__addr">
-                <h1 class="footer__logo">
+              <h1 style="display: none;">Footer Contact Section</h1>
+                <h2 class="footer__logo">
+                    <span style="display: none;">Footer Logo Image</span>
                     <img src="images/logo_W.png" alt="">
-                </h1>
+                </h2>
                    
                 <p>We are an organization of 225 hockey referees serving London and area.
                   If you are currently looking for an organization to referee your hockey league,
@@ -159,22 +175,23 @@
                 </address>
             </div>
             <ul class="footer__nav">
+              <h1 style="display: none;">Footer Menu</h1>
                 <li class="nav__item">
                   <h2 class="nav__title">Programs</h2>
             
                   <ul class="nav__ul">
                     <li>
-                      <a href="#">Junior Mentorship</a>
+                    <a href="parent.html">Parent Education</a>
                     </li>
             
                     <li>
-                      <a href="officialsDev.html">Officials Development</a>
+                    <a href="officialsDev.html">Officials Development</a>
                     </li>
                         
                     <li>
-                      <a href="#">Tournaments</a>
+                    <a href="membership.html">Membership</a>
                     </li>
-                  </ul>
+                </ul>
                 </li>
                 <li class="nav__item">
                     <h2 class="nav__title">Legal</h2>
@@ -218,6 +235,18 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="scripts/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                    $('.dropdown-trigger').dropdown(
+                    {
+                        constrainWidth: false
+                    }
+                    );
+
+                    $('.sidenav').sidenav();
+                });
+        </script>
 </body>
 </html>
