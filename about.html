@@ -86,11 +86,11 @@
         </section>
     
         <section id="app" class="container">
-            <div class="people-info">
-                <h3>Team Members</h3>
-                <ul>
-                    <newmessage @showmydata="showPeopleData" v-for="people in carmodel" :people="people" :key="people.id"></newmessage>
-                </ul>
+                <div class="people-info">
+                  <h3>Team Members</h3>
+                  <ul>
+                      <newmessage @showmydata="showPeopleData" v-for="people in carmodel" :people="people" :key="people.id"></newmessage>
+                  </ul>
                 </div>
                 <section class="bio-data" :class=" {'show-bio' : showBioData}">
                    <h4>{{currentPeopleData.name}}</h4>
@@ -198,6 +198,5 @@
                 $('.sidenav').sidenav();
             });
     </script>
-
 </body>
 </html>

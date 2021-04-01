@@ -33,10 +33,13 @@ if (isset($_POST['submit'])) {
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <title>Create User Panel</title>
 </head>
 
 <body>
+
 <!-- Header -->
 <div class="nav-bar-new row">
             
@@ -125,7 +128,7 @@ if (isset($_POST['submit'])) {
                     $("select").material_select();
                 });
         </script>
-    
+   
 </body>
 
 </html>
