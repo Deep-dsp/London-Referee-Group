@@ -357,6 +357,14 @@
     }
 }
 
+.back-link:hover{
+    cursor: pointer;
+
+    span{
+        margin-left: 10px;
+    }
+}
+
 @media screen and (min-width: 700px) {
     .user-contain{
         margin-right: 20px;

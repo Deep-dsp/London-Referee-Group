@@ -1,7 +1,8 @@
 .about-info {
-    margin: 40px 20px;
+    // margin: 40px 20px;
 
     .about-pic {
+        margin: 50px 0;
         img {
             width: 90%;
         }
@@ -9,7 +10,6 @@
 }
 
 .about-text {
-    margin-top: 20px;
     h2 {
         
         margin-bottom: 10px;
@@ -39,6 +39,7 @@
         }
     }
     .history-text {
+        margin: 50px 0;
         h2 {
             margin-top: 20px;
             margin-bottom: 10px;
@@ -63,6 +64,12 @@
     }
 }
 #app {
+    .people-info h3{
+        font-family: Poppins, sans-serif;
+        text-align: center;
+        margin: 50px 0;
+        color: rgb(255,0,51);
+    }
     .people-pic {
         margin: 20px;
         text-align: center;
@@ -77,8 +84,11 @@
         display: none;
     }
     .show-bio {
-        display: block !important;
-        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // margin: 30px;
     }
    .people-text {
        margin: 20px;
@@ -94,7 +104,7 @@
         }
         .about-text {
             margin-left: 40px;
-            margin-top: 10px;
+            margin-top: 80px;
         }
     }
     .about-history {

@@ -11,10 +11,9 @@ export default{
         }
     },
     template: `<li class ="people-pic" @click="logClicked"> <img :src="'images/' + people.avatar" :alt='people.name + " image"' >
-        <p>{{people.name}} </p>
-    
-        
-        </li>`,
+                    <p>{{people.name}} </p>
+                </li>
+                `,
 
         created: function () {
             console.log(`created ${this.people.name}'s card`);

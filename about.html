@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- Header -->
-    <div class="nav-bar-new">
+    <div class="nav-bar-new row">
         
         <nav>
             <div class="nav-wrapper container">
@@ -63,7 +63,7 @@
            
        </section>
 
-        <section class="about-info">
+        <section class="about-info container">
             <div class="about-pic">
                 <img src="images/about_img.jpg" alt="about referee">
             </div>
@@ -73,7 +73,7 @@
                 <p>The London referees Group is an organization of 225 hockey referees serving London and area. If you are currently looking for an organization to referee your minor hockey league or your mens hockey league. </p>
             </div>
         </section>
-        <section class="about-history">
+        <section class="about-history container ">
             <div class="history-pic">
                 <img src="images/about_his.jpg" alt="about history">
             </div>
@@ -85,16 +85,17 @@
             
         </section>
     
-        <section id="app">
+        <section id="app" class="container">
             <div class="people-info">
+                <h3>Team Members</h3>
                 <ul>
                     <newmessage @showmydata="showPeopleData" v-for="people in carmodel" :people="people" :key="people.id"></newmessage>
                 </ul>
                 </div>
                 <section class="bio-data" :class=" {'show-bio' : showBioData}">
-                   <h2>{{currentPeopleData.name}}</h2>
-                   <h3>Role: {{currentPeopleData.role}}</h3>
-                   <p>Email: {{currentPeopleData.email}}</p>
+                   <h4>{{currentPeopleData.name}}</h4>
+                   <h5>Role: {{currentPeopleData.role}}</h5>
+                   <p style="color: crimson;font-weight: bold;">Email: {{currentPeopleData.email}}</p>
                </section>
                <div class="people-text">
                 <p>Click the image to see more infomation!</p>
