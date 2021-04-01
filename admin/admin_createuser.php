@@ -80,7 +80,7 @@ if (isset($_POST['submit'])) {
         <!-- Header -->
     <div class="create-info container">
         <div class="create-con">
-            <h2>Let's create a new user!</h2>
+            <h2>create a new user!</h2>
             <?php echo !empty($message)?$message:'';?>
             <form action="admin_createuser.php" method="post" class="create-form">
                 <label for="first_name">First Name</label>
@@ -122,6 +122,7 @@ if (isset($_POST['submit'])) {
                     );
 
                     $('.sidenav').sidenav();
+                    $("select").material_select();
                 });
         </script>
     

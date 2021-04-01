@@ -230,6 +230,7 @@
            font-size: 16px;
         }
         select{
+            display: block;
             margin: 5px 0px;
             height: 30px;
             border: 2px solid orange;
@@ -435,13 +436,12 @@
     //     }
     // }
     .create-info {
-        
-        .create-pic {
-            img {
-                margin: 100px 0 0 100px;
-            }
+        padding: 50px 0;
+        img{
+            margin-top: 50px;
         }
     }
+
     .edit-info {
         margin-top: 130px;
         input {
@@ -473,10 +473,6 @@
     .create-info {
        display: grid;
        grid-template-columns: 550px 500px;
-        .create-pic {
-            margin-top: 50px;
-            
-        }
     }
     .edit-info {
         display: grid;
