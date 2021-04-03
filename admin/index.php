@@ -55,6 +55,8 @@ confirm_logged_in();
         <?php if(isCurrentUserAdminAbove()):?>
             <a href="admin_createuser.php" class="info-create">Create user</a>
             <a href="admin_deleteuser.php" class="info-create">Delete User</a>
+            <a href="admin_editcontent.php" class="info-create">Edit Content</a>
+            <a href="admin_editalluser.php" class="info-create">Edit All User</a>
         <?php endif;?>
         <h3>You last sign in: <?php  echo $_SESSION['last_login'];?></h3>
         <div class="info-op">
