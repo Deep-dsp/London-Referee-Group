@@ -18,7 +18,6 @@ if(isset($_GET["id"])){
     $allUsers = getAllUsers($pdo);
    
 
-    return $allUsers;
-    
+    return $allUsers;    
 }
 
